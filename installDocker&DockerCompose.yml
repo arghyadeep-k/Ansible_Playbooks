@@ -4,7 +4,7 @@
 
 ---
 - name: Install Docker & Docker Compose
-  hosts: all
+  hosts: localhost
 
   tasks:  
     - name: Remove old Docker installations, if any
