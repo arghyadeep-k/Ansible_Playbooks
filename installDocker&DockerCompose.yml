@@ -32,6 +32,7 @@
           - apt-transport-https
           - ca-certificates 
           - curl 
+          - gnupg
           - gnupg-agent
           - software-properties-common
 
@@ -44,13 +45,13 @@
     - name: Add Docker Repository
       become: yes
       apt_repository:
-        repo: deb [arch=amd64] https://download.docker.com/linux/debian buster stable
+        repo: deb [arch=amd64] https://download.docker.com/linux/debian {{ ansible_lsb.codename }} stable
         state: present
+        update_cache: yes      
 
-    - name: Update and install Docker Engine
+    - name: Install Docker Engine
       become: yes
-      apt: 
-        update_cache: yes
+      apt:         
         pkg:
           - docker-ce
           - docker-ce-cli
@@ -62,4 +63,5 @@
         url: https://github.com/docker/compose/releases/download/1.28.2/docker-compose-Linux-x86_64
         dest: /usr/local/bin/docker-compose           
         mode: 0755
+       
        
