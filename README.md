@@ -10,4 +10,4 @@ A collection of playbooks to automate common tasks in a Linux server using Ansib
 
 
 ## License
-All information in this repo is published under the Unlicense. Please refer the accompaying license file for more details.
+All information in this repo is published under the Unlicense. Please read the accompanying license file for more details.
