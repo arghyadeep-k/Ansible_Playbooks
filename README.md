@@ -5,14 +5,14 @@ A collection of playbooks to automate common tasks in a Linux server using Ansib
 
 ## Playbooks Available:
 - ### Debian:
-    - [Install Docker](https://codeberg.org/arghyadeep/Ansible_Playbooks/src/branch/main/Debian/installDocker.yml)
-    - [Install Docker & Docker Compose](https://codeberg.org/arghyadeep/Ansible_Playbooks/src/branch/main/Debian/installDocker&DockerCompose.yml)
-    - [Clean, update and upgrade apt packages](https://codeberg.org/arghyadeep/Ansible_Playbooks/src/branch/main/Debian/update&Upgrade.yml)
+    - [Install Docker](Debian/installDocker.yml)
+    - [Install Docker & Docker Compose](Debian/installDocker&DockerCompose.yml)
+    - [Clean, update and upgrade apt packages](Debian/update&Upgrade.yml)
 
 - ### Ubuntu:
-    - [Install Docker](https://codeberg.org/arghyadeep/Ansible_Playbooks/src/branch/main/Ubuntu/installDocker.yml)
-    - [Install Docker & Docker Compose](https://codeberg.org/arghyadeep/Ansible_Playbooks/src/branch/main/Ubuntu/installDocker&DockerCompose.yml)
-    - [Clean, update and upgrade apt packages](https://codeberg.org/arghyadeep/Ansible_Playbooks/src/branch/main/Ubuntu/update&Upgrade.yml)
+    - [Install Docker](Ubuntu/installDocker.yml)
+    - [Install Docker & Docker Compose](Ubuntu/installDocker&DockerCompose.yml)
+    - [Clean, update and upgrade apt packages](Ubuntu/update&Upgrade.yml)
 
 
 ## License
