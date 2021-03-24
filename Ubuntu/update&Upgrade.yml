@@ -1,0 +1,26 @@
+###################################################
+# Clean, Update & Upgrade Debian Systems Playbook #
+###################################################
+---
+- name: Clean, Update & Upgrade Debian systems
+  hosts: all
+
+  tasks:    
+    - name: Remove unwanted dependencies
+      become: yes
+      apt: 
+          autoremove: yes
+          cache_valid_time: 86400   # One Day #
+      
+      
+    - name: Update all packages
+      become: yes
+      apt:
+          update_cache: yes
+          cache_valid_time: 86400   # One Day #
+      
+    - name: Upgrade
+      become: yes
+      apt: 
+        upgrade: yes
+        cache_valid_time: 86400   # One Day #
